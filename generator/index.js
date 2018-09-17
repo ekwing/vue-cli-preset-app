@@ -4,7 +4,8 @@ module.exports = (api, options) => {
       "review": 'serve -s dist'
     },
     dependencies: {
-      "axios": "^0.18.0"
+      "axios": "^0.18.0",
+      "@ek/jsbridge": "git+http://gitlab.ekwing.com/ed/jsbridge.git#1.4.1"
     },
     devDependencies: {
       "serve": "^10.0.1"
