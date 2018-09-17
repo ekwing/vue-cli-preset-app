@@ -1,0 +1,33 @@
+.ek-view {
+  height: 100%;
+  width: 100%;
+}
+
+.clearfix {
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+}
+
+.float {
+  &-r {
+    float: right;
+  }
+  &-l {
+    float: left;
+  }
+}

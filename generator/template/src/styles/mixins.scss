@@ -1,0 +1,38 @@
+@function px2rem($px, $base-font-size: 75px) {
+	@if (unitless($px)) {
+		@return px2rem($px + 0px);
+	} @else if (unit($px) == rem) {
+		@return $px;
+	}
+	@return ($px / $base-font-size) * 1rem;
+}
+
+@mixin font-dpr($font-size) {
+	font-size: $font-size;
+	[data-dpr="2"] & {
+		font-size: $font-size * 2;
+	}
+	[data-dpr="3"] & {
+		font-size: $font-size * 3;
+	}
+}
+
+@mixin round($radius) {
+  height: $radius;
+  width: $radius;
+  border-radius: 50%;
+}
+
+@mixin borderRouned($radius) {
+  &.rounded {
+    border-radius: px2rem($radius);
+  }
+}
+
+@mixin button {
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  outline: 0;
+  white-space: nowrap;
+}

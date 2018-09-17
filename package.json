@@ -1,0 +1,9 @@
+{
+  "name": "vue-cli-preset-app",
+  "version": "0.0.1",
+  "description": "vue-cli-preset project-app-template",
+  "main": "index.js",
+  "repository": "https://github.com/ekwing/vue-cli-preset-app",
+  "author": "L-Chris <563303226@qq.com>",
+  "license": "MIT"
+}
